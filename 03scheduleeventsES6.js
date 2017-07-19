@@ -3,7 +3,7 @@
 const audioContext = new AudioContext();
 
 const play = (delay, pitch, duration) => {
-  var oscillator = audioContext.createOscillator();
+  const oscillator = audioContext.createOscillator();
   oscillator.connect(audioContext.destination);
   oscillator.type = 'sawtooth';
   
