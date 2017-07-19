@@ -1,0 +1,25 @@
+
+
+Each octave, 12 semitones, doubles frequency
+	
+	baseFrequency * Math.pow(2, noteOffset / 12);
+
+		- to transpose up 7 semitones, ex:
+
+			oscillator.frequency.value = 440*Math.pow(2, 7/12);   // 659.255
+
+		- to transpose down 14 semitones:
+
+			oscillator.frequency.value = 440*Math.pow(2, -14/12); // 195.998
+
+		- alternatively, use detune to transpose 1/100 semitones:
+				in this case, 7 semitones: 
+					oscillator.detune.value = 700;	// noteOffset*100
+
+
+
+
+
+
+
+
